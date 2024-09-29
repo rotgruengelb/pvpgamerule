@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "pvpgamerule",
+	"version": "${version}",
+	"name": "PvP Gamerule",
+	"description": "Adds a simple PvP Toggle Gamerule.",
+	"authors": [],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/pvp-gamerule",
+		"sources": "https://github.com/rotgruengelb/pvpgamerule",
+		"issues": "https://github.com/rotgruengelb/pvpgamerule/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/pvpgamerule/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rotgruengelb.pvpgamerule.PvPGamerule"
+		]
+	},
+	"mixins": [
+		"pvpgamerule.mixins.json"
+	],
+	"depends": {
+		"fabric": "*",
+		"minecraft": "${minecraft_version_range}"
+	}
+}
